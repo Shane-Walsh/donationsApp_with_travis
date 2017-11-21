@@ -17,6 +17,7 @@
     "lint": "esw ./public/javascript/**/*.js ./test ./routes ./models/",
     "test": "cross-env NODE_ENV=test PORT=4000 mocha test/routes/donations-test.js",
     "coverage": "cross-env NODE_ENV=test PORT=4000 istanbul cover _mocha -- test/routes/donations-test.js",
+    "check-coverage": "istanbul check-coverage --statements 70 --branches 40 --functions 40 --lines 70",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "server": "nodemon bin/www"
   },
