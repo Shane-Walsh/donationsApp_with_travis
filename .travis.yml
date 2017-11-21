@@ -3,10 +3,10 @@ node_js:
 - stable
 
 script:
- - npm run coverage
- 
- after_success:
-    - npm run report-coverage
+- npm run coverage
+
+after_success:
+- npm run report-coverage
 
 branches:
    only:
