@@ -1,3 +1,14 @@
 language: node_js
 node_js:
 - stable
+
+branches:
+   only:
+   - development
+
+notifications:
+    email:
+      recipients:
+        - 20079607@mail.wit.ie      
+      on_success: never        # default: change
+      on_failure: always       # default: always
